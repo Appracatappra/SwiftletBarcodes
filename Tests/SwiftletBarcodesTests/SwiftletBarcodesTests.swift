@@ -6,6 +6,7 @@ final class SwiftletBarcodesTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(SwiftletBarcodes().text, "Hello, World!")
+        let barcode = SwiftletBarcodes.generate(from: "12345678", format: .code128)
+        XCTAssert(barcode != nil)
     }
 }
