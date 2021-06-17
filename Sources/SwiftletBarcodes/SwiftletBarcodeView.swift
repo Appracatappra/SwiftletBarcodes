@@ -55,6 +55,33 @@ public struct SwiftletBarcodeView: View {
         return SwiftletBarcodes.generate(from: data, format: format, width: width, height:height)
     }
     
+    // MARK: - Initializers
+    /// Creates a new instance of the view with the given parameters.
+    /// - Parameters:
+    ///   - showTitle: If `true`, show a large title over the barcode.
+    ///   - title: The title to display.
+    ///   - titleColor: The title color.
+    ///   - showData: If `true`, Show the data represented by the barcode under it.
+    ///   - data: The data for the barcode to represent.
+    ///   - dataColor: The color of the represented data.
+    ///   - format: The format that the barcode will be generated in.
+    ///   - hasDivider: If `true`, display a divider above and below the Barcode Card.
+    ///   - width: The width of the generated barcode.
+    ///   - height: The height of the generated barcode.
+    public init(showTitle:Bool = true, title:String = "Loyalty Card", titleColor:Color = .black, showData:Bool = true, data:String = "1 12208 81912 0", dataColor:Color = .black, format:SwiftletBarcodes.BarcodeFormat = .code128, hasDivider:Bool = true, width:Double = 380, height:Double = 150) {
+        // Initialize
+        self.showTitle = showTitle
+        self.title = title
+        self.titleColor = titleColor
+        self.showData = showData
+        self.data = data
+        self.dataColor = dataColor
+        self.format = format
+        self.hasDivider = hasDivider
+        self.width = width
+        self.height = height
+    }
+    
     /// Returns the body of the generated barcode.
     public var body: some View {
         VStack {
