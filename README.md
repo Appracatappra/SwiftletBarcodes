@@ -1,6 +1,6 @@
 # SwiftletBarcodes for Swift and SwiftUI
 
-![](https://img.shields.io/badge/license-MIT-green) ![](https://img.shields.io/badge/maintained%3F-Yes-green) ![](https://img.shields.io/badge/swift-5.4-green) ![](https://img.shields.io/badge/iOS-13.0-red) ![](https://img.shields.io/badge/macOS-10.15-red) ![](https://img.shields.io/badge/tvOS-13.0-red) ![](https://img.shields.io/badge/release-v1.0.0-blue)
+![](https://img.shields.io/badge/license-MIT-green) ![](https://img.shields.io/badge/maintained%3F-Yes-green) ![](https://img.shields.io/badge/swift-5.4-green) ![](https://img.shields.io/badge/iOS-13.0-red) ![](https://img.shields.io/badge/macOS-10.15-red) ![](https://img.shields.io/badge/tvOS-13.0-red) ![](https://img.shields.io/badge/release-v1.0.1-blue)
 
 Creates a Barcode as a `Image` representing the given data (as a `String`)  in the given `BarcodeFormat`. **SwiftletBarcodes** can generate barcodes in the following formats:
 
@@ -13,6 +13,8 @@ There are two forms of the `generate` function:
  
 * One generates the requested barcode at the system specified size.
 * The other generates the barcode at a given `width` and `height`.
+
+> **NOTE:** Barcode generation is NOT supported on watchOS and is only included as a stub to support cross platform development.
  
 <a name="Installation"></a>
 ## Installation
