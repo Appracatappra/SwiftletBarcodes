@@ -1,6 +1,4 @@
-# SwiftletBarcodes for Swift and SwiftUI
-
-![](https://img.shields.io/badge/license-MIT-green) ![](https://img.shields.io/badge/maintained%3F-Yes-green) ![](https://img.shields.io/badge/swift-6.0-green) ![](https://img.shields.io/badge/iOS-18.0-red) ![](https://img.shields.io/badge/macOS-15.0-red) ![](https://img.shields.io/badge/tvOS-18.0-red)
+# ``SwiftletBarcodes``
 
 Creates a Barcode as a `Image` representing the given data (as a `String`)  in the given `BarcodeFormat`. **SwiftletBarcodes** can generate barcodes in the following formats:
 
@@ -14,24 +12,7 @@ There are two forms of the `generate` function:
 * One generates the requested barcode at the system specified size.
 * The other generates the barcode at a given `width` and `height`.
 
-> **NOTE:** Barcode generation is NOT supported on watchOS and is only included as a stub to support cross platform development.
- 
-<a name="Installation"></a>
-## Installation
-
-**Swift Package Manager** (Xcode 11 and above)
-
-1. Select **File** > **Swift Packages** > **Add Package Dependency…** from the **File** menu.
-2. Paste `https://github.com/Appracatappra/SwiftletBarcodes.git` in the dialog box.
-3. Follow the Xcode's instruction to complete the installation.
-
-> Why not CocoaPods, or Carthage, or blank?
-
-Supporting multiple dependency managers makes maintaining a library exponentially more complicated and time consuming.
-
-Since, the **Swift Package Manager** is integrated with Xcode 11 (and greater), it's the easiest choice to support going further.
-
-## Using SwiftletBarcodes
+## Overview
 
 **SwiftletBarcodes** in very easy to use in you SwiftUI app. The following example shows how to generate barcodes with either of the two `generate` functions.
 
@@ -55,4 +36,4 @@ SwiftletBarcodeView(showTitle: true, title:"Loyalty Card", showData: true, data:
 
 Will result in a screen like the following being displayed:
 
-![](Documentation/Images/View01.png)
+![](/Resources/View01.png)

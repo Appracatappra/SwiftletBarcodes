@@ -113,11 +113,8 @@ public struct SwiftletBarcodeView: View {
     }
 }
 
-
-/// Defines a sample version of the `SwiftletBarcodeView` used during design.
-public struct SwiftletBarcodeView_Previews: PreviewProvider {
-    /// Returns the sample previews for design.
-    public static var previews: some View {
-        SwiftletBarcodeView()
-    }
+#Preview {
+    SwiftletBarcodeView()
 }
+
+
